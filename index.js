@@ -1,5 +1,5 @@
-var append = require('./lib/nunjucks-tags/append'),
-  output = require('./lib/nunjucks-tags/output');
+var Inject = require('./lib/nunjucks-tags/Inject'),
+  Injected = require('./lib/nunjucks-tags/Injected');
 
 module.exports = {
 
@@ -9,7 +9,7 @@ module.exports = {
    * @param {Object} nunjucksEnvironment The nunjucks environment to extend.
    */
   initialise: function(nunjucksEnvironment) {
-    nunjucksEnvironment.addExtension('append', append);
-    nunjucksEnvironment.addExtension('output', output);
+    nunjucksEnvironment.addExtension('Inject', new Inject() );
+    nunjucksEnvironment.addExtension('Injected', new Injected() );
   }
 }

@@ -14,9 +14,9 @@ The layout - `/views/layouts/default.html`:
         <title>The Title</title>
         <link rel="stylesheet" href="/stylesheets/style.css" />
 
-        {% output "javascript" %}
+        {% injected "javascript" %}
         <script src="/jquery.js"></script>
-        {% endoutput %}
+        {% endinjected %}
     </head>
     <body>
         {% block content %}{% endblock %}
@@ -29,10 +29,10 @@ The view - `/views/index.html`:
 ```HTML
 {% extends "/layouts/default.html" %}
 
-{% append "javascript" %}
+{% inject "javascript" %}
 <!-- Will be output beneath jquery.js -->
 <script src="/index-script.js"></script>
-{% endappend %}
+{% endinject %}
 
 {% block content %}
 <div>
