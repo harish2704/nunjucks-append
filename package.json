@@ -5,9 +5,9 @@
   "description": "A nunjucks extension that allows one to create a tag and append content to it in subviews",
   "contributors": [
     {
-    "name": "Michael Robinson",
-    "email": "mike@pagesofinterest.net"
-  }
+      "name": "Michael Robinson",
+      "email": "mike@pagesofinterest.net"
+    }
   ],
   "repository": {
     "type": "git",
@@ -19,5 +19,6 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "nunjucks": "https://github.com/harish2704/nunjucks/archive/109b0e8b1b91fad81c5a0241943a6d76171563e3.tar.gz"
   }
 }
