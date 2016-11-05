@@ -19,6 +19,8 @@
   ],
   "license": "MIT",
   "dependencies": {
+  },
+  "devDependencies": {
     "nunjucks": "https://github.com/harish2704/nunjucks/archive/109b0e8b1b91fad81c5a0241943a6d76171563e3.tar.gz"
   }
 }
